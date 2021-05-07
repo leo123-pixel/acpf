@@ -6,38 +6,50 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    background-color: #F2F0F0;
+}
+
 .topo {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    height: 100px;
 
 }
 .logo {
-    width: 100px;
+    width: 70px;
 }
 nav ul {
     display: flex;
     list-style: none;
 }
 nav li {
-    padding: 20px;
+    font-size: 20px;
+    padding-right: 30px;
+    font-weight: 700;
 }
 a {
     color: #000;
     text-decoration: none;
 }
+nav a:hover{
+    text-decoration: underline;
+}
 .social-icon img {
-    width: 40px;
-    padding-left: 15px;
+    width: 60px;
+    padding-left: 25px;
+}
+.container {
+    margin: 0px 10px 0px 10px;
 }
 
 .start-image {
     background-image: url(../images/capasite.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: fixed;
     height: 600px;
+
 }
 
 .topper {
@@ -55,45 +67,64 @@ a {
 }
 
 .first-cta{
-    margin-top: 30px;
+    margin: 50px 0px 50px;
     padding: 25px;
     width: 100%;
-    background-color: red;
+    background-color: #1D3640;
+}
+
+.first-cta h2 {
+    color: #F2F0F0;
 }
 
 .project {
-    border: 1px solid black;
     display: flex;
-    margin-top: 30px
+    margin-top: 30px;
 }
 .project img {
-    width: 40%
+    width: 40%;
+    border-radius: 20px;
 }
 .project p {
-    margin: 10px;
+    margin: 40px;
 }
 .deployment{
-    margin-top: 30px;
+    margin: 50px 0px 50px;
+    padding: 25px;
+}
+.deployment h3{
+    margin: 20px 0px 20px;
+    padding: 5px;
+    text-align: center;
 }
 .cards {
     display: flex;
     justify-content: space-between;
 }
 .card {
-    margin-top: 30px;
-    border: 1px solid red;
     width: 35%;
-    margin: 20px;
-    padding: 5px;
+    padding: 35px;
+    margin: 20px 10px 20px;
+    background-color: #5A798C;
+    border: 1px solid white;
     border-radius: 15px;
+    color: #F2F0F0;
+    letter-spacing: 1.2px;
 }
 
 .history {
-    margin-top: 30px;
+    margin: 50px 0px 50px;
+    padding: 25px;
 }
 .history h1 {
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0px 20px;
+}
+.history p {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
 }
 .fotos-inauguracao {
     display: flex;
@@ -102,5 +133,18 @@ a {
 }
 .foto img{
     width: 280px;
-    margin-top: 20px;
+    margin: 40px 10px 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-icon img {
+    width: 60px;
+    padding-left: 25px;
 }
