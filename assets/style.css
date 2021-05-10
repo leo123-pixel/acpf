@@ -14,7 +14,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 80px;
 
 }
 .logo {
@@ -42,14 +42,18 @@ nav a:hover{
 }
 .container {
     margin: 0px 10px 0px 10px;
+    background-image: url(../images/bg-SITE.png);
+}
+header {
+    background-color: #FFFF;
 }
 
 .start-image {
     background-image: url(../images/capasite.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 600px;
-
+    width: 100%;
+    height: 8git00px;
 }
 
 .topper {
@@ -107,7 +111,7 @@ nav a:hover{
     padding: 35px;
     margin: 20px 10px 20px;
     background-color: #5A798C;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 15px;
     color: #F2F0F0;
     letter-spacing: 1.2px;
@@ -136,16 +140,65 @@ nav a:hover{
     width: 280px;
     margin: 40px 10px 40px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #FFFF;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #FFFF;
 }
 
 .footer-icon img {
     width: 60px;
     padding-left: 25px;
+}
+
+@media screen and (max-width: 1024px){
+    .start-image {
+        width: 100%;
+        /* height: 553px; */
+        background-size: contain;
+        margin: 0;
+    }
+
+    .topper {
+        margin: 25px 0px 25px 0px;
+    }
+    .project {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .project img {
+        width: 500px;
+    }
+    #proj1{
+        flex-direction: column-reverse;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .fotos-inauguracao {
+        flex-direction: column;
+    }
+    .foto {
+        text-align: center;
+    }
+    .foto img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .start-image {
+        width: 100%;
+        height: 32px;
+        background-size: contain;
+        margin: 0;
+    }
 }
